@@ -1,0 +1,8 @@
+name: simple_matrix
+version: 1.0.0
+crystal: 1.0.0-dev
+
+authors:
+  - SlayerShadow <gawfast@gmail.com>
+
+license: MIT

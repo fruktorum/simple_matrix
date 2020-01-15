@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  dev:
+    image: simple-matrix
+    build: .
+    volumes: [ '.:/app' ]
+    logging:
+      driver: none
