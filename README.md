@@ -28,7 +28,7 @@ Please read the notes on operations below.
    ```yaml
    dependencies:
      simple_matrix:
-       github: SlayerShadow/simple_matrix
+       github: fruktorum/simple_matrix
    ```
 
 2. Run `shards install`
@@ -196,7 +196,7 @@ Please be sure that engine is still have the desired performance stats: no mallo
 
 ## Contributing
 
-1. Fork it (<https://github.com/SlayerShadow/simple_matrix/fork>)
+1. Fork it (<https://github.com/fruktorum/simple_matrix/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
