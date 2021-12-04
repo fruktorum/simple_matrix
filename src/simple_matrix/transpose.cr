@@ -1,5 +1,5 @@
-class SimpleMatrix( T )
-	private macro transpose_matrix( result_buffer )
+class SimpleMatrix(T)
+  private macro transpose_matrix(result_buffer)
 		target_y, target_x = 0, 0
 
 		@buffer.each_with_index{|row, y|
@@ -12,11 +12,11 @@ class SimpleMatrix( T )
 		}
 	end
 
-	def transpose( result_matrix : SimpleMatrix( T ) ) : Void
-		transpose_matrix result_matrix.buffer
-	end
+  def transpose(result_matrix : SimpleMatrix(T)) : Void
+    transpose_matrix result_matrix.buffer
+  end
 
-	def transpose( result_buffer : Array( Array( T ) ) ) : Void
-		transpose_matrix result_buffer
-	end
+  def transpose(result_buffer : Array(Array(T))) : Void
+    transpose_matrix result_buffer
+  end
 end

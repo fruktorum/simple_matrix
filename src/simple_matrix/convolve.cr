@@ -1,5 +1,5 @@
-class SimpleMatrix( T )
-	private macro convolve_matrix( window_buffer, window_width, window_height, result_buffer, padding )
+class SimpleMatrix(T)
+  private macro convolve_matrix(window_buffer, window_width, window_height, result_buffer, padding)
 		padding_x = {{ padding }}[ :x ]
 		padding_y = {{ padding }}[ :y ]
 
@@ -28,11 +28,11 @@ class SimpleMatrix( T )
 		}
 	end
 
-	def convolve( window : SimpleMatrix( T ), result_matrix : SimpleMatrix( T ), padding : NamedTuple( x: UInt8, y: UInt8 ) = { x: 0_u8, y: 0_u8 } ) : Void
-		convolve_matrix window.buffer, window.width, window.height, result_matrix.buffer, padding
-	end
+  def convolve(window : SimpleMatrix(T), result_matrix : SimpleMatrix(T), padding : NamedTuple(x: UInt8, y: UInt8) = {x: 0_u8, y: 0_u8}) : Void
+    convolve_matrix window.buffer, window.width, window.height, result_matrix.buffer, padding
+  end
 
-	def convolve( window_buffer : Array( Array( T ) ), result_buffer : Array( Array( T ) ), padding : NamedTuple( x: UInt8, y: UInt8 ) = { x: 0_u8, y: 0_u8 } ) : Void
-		convolve_matrix window_buffer, window_buffer.size, window_buffer.first.size, result_buffer, padding
-	end
+  def convolve(window_buffer : Array(Array(T)), result_buffer : Array(Array(T)), padding : NamedTuple(x: UInt8, y: UInt8) = {x: 0_u8, y: 0_u8}) : Void
+    convolve_matrix window_buffer, window_buffer.size, window_buffer.first.size, result_buffer, padding
+  end
 end
