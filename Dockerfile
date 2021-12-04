@@ -3,8 +3,6 @@ WORKDIR /app
 CMD [ "sh" ]
 
 COPY shard.* ./
-RUN shards install
-
-RUN mkdir -p /build
+RUN mkdir -p /build && shards install
 
 COPY . .
