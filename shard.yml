@@ -1,4 +1,6 @@
 name: simple_matrix
+description: A lightweight matrix operations
+
 version: 1.0.0
 crystal: 1.2.2
 
