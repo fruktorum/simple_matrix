@@ -5,7 +5,6 @@
 *.dwarf
 
 core
-Dockerfile
 shard.lock
 Thumbs.db
 
