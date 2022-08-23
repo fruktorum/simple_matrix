@@ -2,7 +2,7 @@ name: simple_matrix
 description: A lightweight matrix operations
 
 version: 1.0.0
-crystal: 1.4.1
+crystal: 1.5.0
 
 authors:
   - SlayerShadow <gawfast@gmail.com>
