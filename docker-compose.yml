@@ -1,9 +1,7 @@
-version: '3.9'
-
 services:
   dev:
     image: simple-matrix
     build: .
-    volumes: [ '.:/app' ]
+    volumes: [ .:/app ]
     logging:
       driver: none
